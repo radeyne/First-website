@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navigation{
+    background-image: linear-gradient(brown, rgb(68, 13, 13));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation > ul > li{
+    list-style: none;
+    margin: 0 5px;
+    padding: 15px 0;
+    margin-left: -5px;
+}
+#navigation > ul > li > a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    border-right: 1px solid white;
+    padding: 16px 15px;
+    transition: 1s;
+}
+#navigation > ul{
+    display: flex;
+    margin-right: 50px;
+}
+#navigation > ul > li:first-child > a{
+    border-left: 1px solid white;
+    padding-left: 15px;
+}
+#navigation > ul > li:hover > a{
+    background-color: rgb(29, 27, 27);
+}
+.logo > h2{
+    color: aliceblue;
+    margin-left: 20px;
+}
+/* dropdown code start here */
+.dropdown{
+    background-color: rgb(112, 30, 30);
+    text-align: center;
+    margin-top: 15px;
+    width: 150px;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    visibility: hidden;
+    transform: scaley(0);
+    transform-origin: top;
+    box-shadow: 10px 10px 10px black;
+    
+    
+}
+.dropdown > li{
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    
+}
+.dropdown > li > a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.dropdown > li:first-child{
+    border-top: 1px solid white;
+}
+#navigation > ul > li:hover > .dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+
+}
+.dropdown > li:hover{
+    background-color: rgb(233, 170, 170);
+}
+.logop{
+    color: yellow;
+    font-size: 50px;
+}
+.dfhghfg{
+    text-align: center
+    background-image: linear-gradiant(black, )
+    
+    
+}
+.header-content{
+    padding: 30px;
+}
